@@ -1,6 +1,8 @@
-# notes-backup
+# Notes Backup for iOS Notes.app
 
 **Versioned, rollback-able backups of Apple Notes on macOS.**
+
+If you accidentally delete a Note from Apple Notes, its not a big deal, you can just recover it. But if you 
 
 Apple Notes has no version history. If you accidentally delete a note you have
 ~30 days of "Recently Deleted" — but if you mangle a note's *contents* (paste
