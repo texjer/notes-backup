@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="280" viewBox="0 0 960 280" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#6e7681"/>
+    </marker>
+  </defs>
+
+  <!-- Apple Notes -->
+  <g transform="translate(50,50)">
+    <rect width="140" height="150" rx="18" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+    <path d="M18,0 h104 a18,18 0 0 1 18,18 v16 h-140 v-16 a18,18 0 0 1 18,-18 z" fill="#f5c842"/>
+    <g stroke="#30363d" stroke-width="3" stroke-linecap="round">
+      <line x1="22" y1="62" x2="118" y2="62"/>
+      <line x1="22" y1="86" x2="102" y2="86"/>
+      <line x1="22" y1="110" x2="112" y2="110"/>
+      <line x1="22" y1="134" x2="82" y2="134"/>
+    </g>
+    <text x="70" y="182" text-anchor="middle" font-size="15" font-weight="600" fill="#e6edf3">Apple Notes</text>
+    <text x="70" y="202" text-anchor="middle" font-size="12" fill="#8b949e">on your Mac, synced from iPhone</text>
+  </g>
+
+  <!-- arrow 1 -->
+  <line x1="215" y1="125" x2="300" y2="125" stroke="#6e7681" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="257" y="110" text-anchor="middle" font-size="13" fill="#8b949e">every hour</text>
+
+  <!-- Markdown files -->
+  <g transform="translate(330,50)">
+    <rect x="20" y="20" width="130" height="130" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+    <rect x="10" y="10" width="130" height="130" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+    <rect x="0" y="0" width="130" height="130" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+    <g font-size="11.5" font-family="'SF Mono', Menlo, Consolas, monospace">
+      <text x="12" y="24" fill="#8b949e">---</text>
+      <text x="12" y="40" fill="#8b949e">folder: Recipes</text>
+      <text x="12" y="56" fill="#8b949e">---</text>
+      <text x="12" y="78" fill="#e6edf3" font-weight="600"># Chili</text>
+      <text x="12" y="96" fill="#e6edf3">- 2 lb beef</text>
+      <text x="12" y="112" fill="#e6edf3">- 1 onion</text>
+    </g>
+    <text x="75" y="182" text-anchor="middle" font-size="15" font-weight="600" fill="#e6edf3">Markdown files</text>
+    <text x="75" y="202" text-anchor="middle" font-size="12" fill="#8b949e">one per note, plus attachments</text>
+  </g>
+
+  <!-- arrow 2 -->
+  <line x1="505" y1="125" x2="590" y2="125" stroke="#6e7681" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="547" y="110" text-anchor="middle" font-size="13" fill="#8b949e">git commit</text>
+
+  <!-- Version history -->
+  <g transform="translate(620,50)">
+    <rect width="290" height="150" rx="12" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+    <line x1="36" y1="30" x2="36" y2="122" stroke="#30363d" stroke-width="3"/>
+    <g fill="#f05033">
+      <circle cx="36" cy="32" r="7"/>
+      <circle cx="36" cy="62" r="7"/>
+      <circle cx="36" cy="92" r="7"/>
+      <circle cx="36" cy="122" r="7"/>
+    </g>
+    <g font-size="13" fill="#e6edf3">
+      <text x="56" y="37">today 14:00 · 1 note changed</text>
+      <text x="56" y="67">yesterday · 3 notes changed</text>
+      <text x="56" y="97">last Tuesday · 1 note changed</text>
+      <text x="56" y="127" fill="#8b949e">…all the way back to day one</text>
+    </g>
+    <text x="145" y="182" text-anchor="middle" font-size="15" font-weight="600" fill="#e6edf3">Version history</text>
+    <text x="145" y="202" text-anchor="middle" font-size="12" fill="#8b949e">see any note as it was, any time — and get it back</text>
+  </g>
+</svg>

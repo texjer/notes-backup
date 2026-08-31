@@ -4,7 +4,10 @@
 git repo so you can see what any note looked like yesterday, last week, or last
 month (and get it back).
 
-![How it works: Apple Notes → Markdown files → version history](docs/how-it-works.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/how-it-works-dark.svg">
+  <img alt="How it works: Apple Notes → Markdown files, every hour → git version history" src="docs/how-it-works.svg">
+</picture>
 
 ## Why
 
