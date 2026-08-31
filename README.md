@@ -1,4 +1,4 @@
-# notes-backup
+# Notes Backup for iOS Notes.app
 
 **Time Machine for Apple Notes.** Every hour, your notes are saved to a local
 git repo so you can see what any note looked like yesterday, last week, or last
