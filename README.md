@@ -9,13 +9,13 @@ month (and get it back).
   <img alt="How it works: Apple Notes → Markdown files, every hour → git version history" src="docs/how-it-works.svg">
 </picture>
 
-## Why
+## Why need? Can't I just "restore" a deleted note?
 
-Apple Notes has no version history. Yes, if you accidentally delete a note,
-you can restore it. But if you *mangle* a note — paste over it, lose half of it
+Yes, if you accidentally *delete* a note,
+you can restore it. But if you *erase* a note, like accidentally paste over it, lose half of it
 to a bad sync, let a toddler "edit" all your notes... Your note is just gone.
 
-This tool fixes that. A quiet background job exports every note to a plain
+This tool fixes that. A background job exports every note to a plain
 Markdown file and commits it to git, so every note gets a full history and a
 one-command rollback. Your iPhone needs nothing: if your notes sync via iCloud,
 they're already on your Mac, and that's what gets backed up.
@@ -25,9 +25,9 @@ they're already on your Mac, and that's what gets backed up.
 ## Install (the easy way)
 
 Installing involves a Python environment, a launchd job, and granting
-**Full Disk Access** to exactly the right binary — doable, but fiddly. Instead,
-let [Claude Code](https://claude.com/claude-code) or
-[Codex](https://openai.com/codex) do it.
+**Full Disk Access** to exactly the right binary. Its easiest to just 
+let an agent like [Claude Code](https://claude.com/claude-code) or
+[Codex](https://openai.com/codex) do it for you:
 
 Open Claude Code / Codex and paste this in as your message:
 
@@ -35,8 +35,7 @@ Open Claude Code / Codex and paste this in as your message:
 Can we install this Apple Notes backup tool: https://github.com/texjer/notes-backup
 ```
 
-The agent will clone the repo, run the installer, and walk you through the one
-step it can't do for you: granting Full Disk Access in System Settings (macOS
+The agent will clone the repo, run the installer, and walk you through. You'll need to grant Full Disk Access in System Settings (macOS
 requires this to read the Notes database). After that, backups run hourly and
 at login, automatically.
 
