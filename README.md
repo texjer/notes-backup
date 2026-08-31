@@ -1,15 +1,14 @@
 # Notes Backup for iOS Notes.app
 
-**Time Machine for Apple Notes.** Every hour, your notes are saved to a local
+**A barebones Time Machine, just for Apple Notes.** Every hour, your notes are saved to a local
 git repo so you can see what any note looked like yesterday, last week, or last
-month — and get it back.
+month (and get it back).
 
 ## Why
 
-Apple Notes has no version history. Delete a note and you get ~30 days of
-"Recently Deleted." But *mangle* a note — paste over it, lose half of it to a
-bad sync, let a toddler "edit" it — and there's no undo. Your note is just
-gone, and it looks like it was always that way.
+Apple Notes has no version history. Yes, if you accidentally delete a note, you can restore it. But if you *mangle* a note — paste over it, lose half of it to a
+bad sync, let a toddler "edit" all your notes... Your note is just
+gone.
 
 This tool fixes that. A quiet background job exports every note to a plain
 Markdown file and commits it to git, so every note gets a diffable history and
