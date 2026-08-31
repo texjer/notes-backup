@@ -49,7 +49,10 @@ cd notes-backup
 ```
 
 Then grant **Full Disk Access** to `.venv/bin/python3` — the installer opens
-the right System Settings pane and prints the exact path to add.
+the right System Settings pane and prints the exact path. Click **+**, press
+`Cmd+Shift+G`, paste the path, and make sure the toggle is on:
+
+<img src="docs/full-disk-access.png" width="488" alt="System Settings › Privacy &amp; Security › Full Disk Access, with python3 toggled on and the + button highlighted">
 
 ---
 
