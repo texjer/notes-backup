@@ -18,8 +18,7 @@ to a bad sync, let a toddler "edit" all your notes... Your note is just gone.
 This tool fixes that. A quiet background job exports every note to a plain
 Markdown file and commits it to git, so every note gets a full history and a
 one-command rollback. Your iPhone needs nothing: if your notes sync via iCloud,
-they're already on your Mac, and that's what gets backed up. Nothing leaves
-your computer.
+they're already on your Mac, and that's what gets backed up.
 
 ---
 
@@ -64,6 +63,22 @@ It's all plain git, so any git tool works — or just ask your agent:
 Notes live at `~/NotesBackup/notes/<Account>/<Folder>/<Title>.<uuid>.md`,
 attachments at `~/NotesBackup/media/`. Copy the old text back into Notes and
 you're done.
+
+---
+
+## Your notes stay on your Mac
+
+This tool reads your notes, so you should know exactly where they go: **nowhere.**
+
+- **No server, no account, no telemetry.** The backup script makes zero network
+  requests — it's a few hundred lines of Python you can read yourself. The only
+  time anything touches the internet is `pip install` during setup, to fetch
+  the open-source parser library.
+- **The backup is just a folder** at `~/NotesBackup`. It never gets pushed
+  anywhere unless *you* add a git remote and push it.
+- **Full Disk Access** is granted only to this project's own private Python
+  binary, not your terminal or your whole shell — and you can revoke it in
+  System Settings any time.
 
 ---
 
